@@ -43,14 +43,21 @@ int main(int argc, char *argv[])
 			strcpy(prompt, token);
 			strcat(prompt, ":~ ");
 			strcat(temp, prompt);
+<<<<<<< HEAD
 			strcpy(prompt, temp);
+=======
+>>>>>>> 0cded797c93a9a995660d2ce16cb375a12f73698
 			
 		}
 		else
 		{
 			system(command);
 		}
+<<<<<<< HEAD
 		printf("%s", prompt);
+=======
+		printf("%s", temp);
+>>>>>>> 0cded797c93a9a995660d2ce16cb375a12f73698
 		gets(command);
 	}
 	printf("Process Completed.\n");
