@@ -2,8 +2,8 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define ENGLISH
-//#define FRENCH
+//#define ENGLISH
+#define FRENCH
 
 struct node //each node of linked list
 {
@@ -17,10 +17,14 @@ int main()
 
 	#ifdef ENGLISH
 		printf("Welcome to the infinite string storage program.\n");
+		printf("Only the first word of each input will be printed.\n");
+		printf("type ***END*** to print your list of words.");
 		printf("Input a word:");
 	#endif
 	#ifdef FRENCH
 		printf("Bonjour, bienvenue au programme ayant une mémoire infinie.\n");
+		printf("Rien que le premier mot entré a chaque fois sera enregistrer.\n");
+		printf("Entrez ***END*** pour afficher votre list.\n");
 		printf("Entrez un mot:");
 	#endif
 
